@@ -1,0 +1,58 @@
+$(document).ready(function(){
+	/*$("#special").click(function(){
+		$(".mb_bgimage").fadeOut(1000);
+		$(".mb_bgimage").attr({
+        src: "images/daisy.jpg"
+    	})
+    	$(".mb_bgimage").fadeIn(1000);
+	})
+	$(".normal").click(function(){
+		$(".mb_bgimage").attr({
+        src: "images/logo.png"
+    	})
+	})*/
+	$("#special").click(function(){
+		$('.mb_bgimage').css("opacity","0.8");
+		$("#daisytext").fadeOut(1000);
+		$("#solartext").fadeOut(1000);
+		$("#srishtitext").fadeOut(1000);
+		$('.mb_bgimage').fadeOut(1000, function() {
+        $('.mb_bgimage').attr("src","images/daisy.jpg");
+        $('.mb_bgimage').fadeIn(2000);
+    	});
+	})
+	$(".normal").click(function(){
+		//if($('.mb_bgimage').attr("src")=="images/daisy.jpg")
+		//{
+			$('.mb_bgimage').css("opacity","0.8");
+			$("#daisytext").fadeOut(1000);
+			$("#solartext").fadeOut(1000);
+			$("#srishtitext").fadeOut(1000);
+			$('.mb_bgimage').fadeOut(1000, function() {
+        	$('.mb_bgimage').attr("src","images/logo.png");
+        	$('.mb_bgimage').fadeIn(2000);
+        //}
+    	});
+	})
+	$("#daisy").click(function(){
+		$('.mb_bgimage').css("opacity","0.05");
+		$("#daisytext").fadeOut(1000);
+		$("#solartext").fadeOut(1000);
+		$("#srishtitext").fadeOut(1000);
+		$("#daisytext").fadeIn(1000);
+	})
+	$("#solar").click(function(){
+		$('.mb_bgimage').css("opacity","0.05");
+		$("#daisytext").fadeOut(1000);
+		$("#solartext").fadeOut(1000);
+		$("#srishtitext").fadeOut(1000);
+		$("#solartext").fadeIn(1000);
+	})
+	$("#srishti").click(function(){
+		$('.mb_bgimage').css("opacity","0.05");
+		$("#daisytext").fadeOut(1000);
+		$("#solartext").fadeOut(1000);
+		$("#srishtitext").fadeOut(1000);
+		$("#srishtitext").fadeIn(1000);
+	})
+})
